@@ -1,5 +1,5 @@
 {
-    "name": "novaway/common-contexts",
+    "name": "tmisheva/common-contexts",
     "description": "Novaway Behat common contexts",
     "keywords": ["BDD", "Behat", "Symfony2", "Context"],
     "type": "library",
@@ -10,14 +10,13 @@
         }
     ],
     "require": {
-        "php": "~5.4",
-        "behat/behat": "~3.0",
-        "behat/mink-extension": "~2.0"
+        "php": "~5.4"
     },
     "require-dev": {
+        "behat/behat": "~3.0",
+        "behat/mink-extension": "~2.0",
         "behat/mink-goutte-driver": "~1.1",
-        "behat/mink-selenium2-driver": "~1.2",
-        "kherge/box": "~2.5"
+        "behat/mink-selenium2-driver": "~1.2"
     },
     "autoload": {
         "psr-4": {
