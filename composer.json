@@ -1,6 +1,6 @@
 {
     "name": "tmisheva/common-contexts",
-    "description": "Novaway Behat common contexts",
+    "description": "Tanya Behat common contexts",
     "keywords": ["BDD", "Behat", "Symfony2", "Context"],
     "type": "library",
     "license": "MIT",
@@ -10,13 +10,14 @@
         }
     ],
     "require": {
-        "php": "~5.4"
+        "php": "~5.4",
+        "behat/behat": "~3.0",
+        "behat/mink-extension": "~2.0"
     },
     "require-dev": {
-        "behat/behat": "~3.0",
-        "behat/mink-extension": "~2.0",
         "behat/mink-goutte-driver": "~1.1",
-        "behat/mink-selenium2-driver": "~1.2"
+        "behat/mink-selenium2-driver": "~1.2",
+        "kherge/box": "~2.5"
     },
     "autoload": {
         "psr-4": {
