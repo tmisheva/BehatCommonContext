@@ -1,10 +1,6 @@
 Behat Common Contexts
 =====================
 
-[![Build Status](https://travis-ci.org/novaway/BehatCommonContext.svg)](https://travis-ci.org/novaway/BehatCommonContext)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/novaway/BehatCommonContext/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/novaway/BehatCommonContext/?branch=master)
-[![novaway/BehatCommonContext](https://poser.pugx.org/novaway/common-contexts/v/stable.png)](https://packagist.org/packages/novaway/common-contexts)
-
 Provide most common behat tests.
 
 The only change from the original repository [novaway/BehatCommonContext](https://github.com/novaway/BehatCommonContext) is a fix for Select2 Version 3.
@@ -19,9 +15,14 @@ The extension requires :
 ## Usage
 
 Add dependencies with Composer :
-
 ``` bash
-$ php composer.phar require novaway/common-contexts "~2.0"
+"require": {
+    ...
+    "tmisheva/common-contexts": "dev-master"
+},
+"repositories": [
+    { "type": "vcs", "url": "git@github.com:tmisheva/BehatCommonContext.git" }
+]
 ```
 
 In `behat.yml`, enable desired contexts:
@@ -38,4 +39,14 @@ default:
     # ...
     extensions:
         Novaway\CommonContexts\Extension: ~
+```
+or
+```yaml
+default:
+  # ...
+  suites:
+    default:
+      contexts:
+        # ...
+        - Novaway\CommonContexts\Context\Select2Context
 ```
